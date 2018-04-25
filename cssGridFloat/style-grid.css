@@ -1,0 +1,124 @@
+/**
+ * The primary stylesheet for the CSS Grid Playground.
+ * This sheet pulls in surrounding components allowing you to focus on specifics.
+ */
+
+/* Components */
+@import url('CSS/reset.css');
+@import url('CSS/accessibility.css');
+@import url('CSS/layout.css');
+@import url('CSS/typography.css');
+@import url('CSS/masthead.css');
+@import url('CSS/boxes.css');
+
+/* CSS Grid Playground */
+
+.the-grid
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    grid-template-areas:
+        "qq"
+        "ww"
+        "ww"
+        "ww"
+        "ww"
+        "ee"
+        "rr"
+        "tt"
+        "yy"
+        "uu"
+        "ii"
+        ;
+}
+
+/*    FIRST BREAKPOINT    */
+@media screen and (min-width:600px)
+{
+.the-grid
+    {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas:
+        "qq qq qq qq"
+        "ww ee ee ee"
+        "ww ee ee ee"
+        "ww ee ee ee"
+        "ww ee ee ee"
+        "rr rr rr rr"
+        "tt tt tt tt"
+        "yy yy yy yy"
+        "uu uu uu uu"
+        "ii ii ii ii"
+        ;
+    }  
+
+}
+
+/*  SECOND BREAKPOINT   */
+@media screen and (min-width:900px)
+{
+.the-grid
+    {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+        "qq qq qq"
+        "qq qq qq"
+        "ww ee rr"
+        "ww ee rr"
+        "ww ee rr"
+        "tt yy uu"
+        "tt yy uu"
+        "tt yy uu"
+        "ii ii ii"
+        ;
+    } 
+
+}
+
+.blue 
+/*1*/
+{
+    grid-area: qq;
+}
+.purple 
+/*2*/
+{
+    grid-area: ww;
+}
+.green 
+/*3*/
+{
+    grid-area: ee;
+}
+.yellow 
+/*4 */
+{
+    grid-area: rr;
+}
+.orange 
+/*5*/
+{
+    grid-area: tt;
+}
+.red 
+/*6*/
+{
+    grid-area: yy;
+}
+.slate 
+/*7 */
+{
+    grid-area: uu;
+}
+.lineblue 
+/*8*/
+{
+    grid-area: ii;
+}
