@@ -1,0 +1,93 @@
+/**
+ * The primary stylesheet for the CSS Grid Playground.
+ * This sheet pulls in surrounding components allowing you to focus on specifics.
+ */
+
+/* Components */
+@import url('CSS/reset.css');
+@import url('CSS/accessibility.css');
+@import url('CSS/layout.css');
+@import url('CSS/typography.css');
+@import url('CSS/masthead.css');
+@import url('CSS/boxes.css');
+
+/* MOBILE VIEW */
+.the-grid
+{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, auto);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    grid-template-areas:
+        "qq"
+        "ww"
+        "ee"
+        "rr"
+        "tt"
+        "yy"
+        "uu"
+        ;
+}
+
+/* DESKTOP VIEW */
+@media screen and (min-width:600px)
+{
+.the-grid
+    {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, auto);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px;
+    grid-template-areas:
+        "qq qq qq qq"
+        "ww ww ww ww"
+        "ww ww ww ww"
+        "ee ee rr rr"
+        "ee ee rr rr"
+        "ee ee rr rr"
+        "tt tt tt tt"
+        "yy yy yy yy"
+        "uu uu uu uu"
+        ;
+    }  
+
+}
+
+.navigation
+/*1*/
+{
+    grid-area: qq;
+}
+.ww 
+/*2*/
+{
+    grid-area: ww;
+}
+.ee 
+/*3*/
+{
+    grid-area: ee;
+}
+.rr 
+/*4 */
+{
+    grid-area: rr;
+}
+.tt 
+/*5*/
+{
+    grid-area: tt;
+}
+.yy 
+/*6*/
+{
+    grid-area: yy;
+}
+.uu 
+/*7 */
+{
+    grid-area: uu;
+}
+

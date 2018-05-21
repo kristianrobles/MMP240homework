@@ -1,0 +1,108 @@
+	body
+		{
+		font-family: ;
+		background-color: white;
+		color: black; 
+		}
+
+	.map 
+	{
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+	}
+
+	.contact
+	{
+	width:800px;
+	margin: auto;
+	}
+	
+	.yy
+	{
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		color: #333;
+		padding-top: 1px;
+		padding-left: 40px;
+	}
+
+	.uu
+	{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 20px;
+		color: #57606f;
+		padding-top: 1px;
+		padding-left: 40px;
+	}
+
+	h3
+	{
+		font-family: 'Roboto', sans-serif;
+		font-size: 20px;
+		color: #2f3542;		
+	}
+
+	p
+	{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 20px;
+		color: #333;
+	}
+
+
+
+		/* unvisited link */
+			a:link { color: #57606f; }
+			
+		/* visited link */
+			a:visited { color: #57606f; }
+
+		/* click and hold link color */
+			a:hover { color: #ff7f50; }
+
+		/* selected link */
+			a:active { color: #854836; }
+
+		/* removing underline on link */
+			a { text-decoration: none; }
+
+
+/* NAVIGATION BAR - CODES. */
+	ul.navigation
+		{
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+    	overflow: hidden;
+    	background-color: white;
+    	list-style: none; /* removing bullet points on link */
+		}
+
+	li 
+		{
+    	float: left;
+
+		}
+
+	li a 
+		{
+		font-family: 'Montserrat', sans-serif;
+    	display: block;
+    	text-align: center;
+    	padding: 5px 20px;
+    	text-decoration: none;
+		}
+
+	li a:hover 
+		{
+    	background-color: #D8973C;
+		}
+
+	/*	MENU - CODES. */
+	ul.navigation
+		{
+		font-family: 'Montserrat', sans-serif;
+    	color: #57606f;
+    	padding-left: 50px;
+		}
